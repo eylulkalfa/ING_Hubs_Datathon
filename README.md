@@ -1,36 +1,37 @@
 # 📊 ING Hubs Datathon Project
 
-## 🧠 Proje Hakkında
+## 🧠 About the Project
 
-Bu proje, ING Hubs Datathon kapsamında müşteri verileri üzerinden **churn (müşteri kaybı) tahmini** yapmak amacıyla geliştirilmiştir.
+This project was developed as part of the **ING Hubs Datathon** and aims to predict **customer churn** using customer data.
 
-Veri seti üzerinde yapılan analizler ve feature engineering süreçleri ile model performansının artırılması hedeflenmiştir.
+The goal is to improve model performance through **data analysis** and **feature engineering techniques**.
 
 ---
 
-## 📁 Veri Seti
+## 📁 Dataset
 
-Projede kullanılan veri setleri:
+The project uses the following datasets:
 
-* `customers.csv` → Müşteri temel bilgileri
-* `customer_history.csv` → Müşteri geçmiş işlemleri
-* `referance_data.csv` → Eğitim (train) etiketleri
-* `referance_data_test.csv` → Test verisi
-* `sample_submission.csv` → Örnek submission formatı
+* `customers.csv` → Customer demographic information
+* `customer_history.csv` → Customer transaction history
+* `referance_data.csv` → Training labels
+* `referance_data_test.csv` → Test dataset
+* `sample_submission.csv` → Sample submission format
 
-### ⚠️ Veri Notları
+### ⚠️ Notes on Data
 
 * `work_sector`:
 
-  * Eksik değerler **bilinçli olarak bırakılmıştır**
-  * Sebep: Öğrenci ve işsiz kullanıcıların sektör bilgisi yoktur
+  * Missing values are **intentionally left as is**
+  * Reason: Students and unemployed customers do not have sector information
+
 * `churn`:
 
-  * Test setinde boş olması normaldir (label yok)
+  * It is normal for this column to be empty in the test dataset (no labels provided)
 
 ---
 
-## ⚙️ Kullanılan Teknolojiler
+## ⚙️ Technologies Used
 
 * Python 🐍
 * NumPy
@@ -40,33 +41,33 @@ Projede kullanılan veri setleri:
 
 ---
 
-## 🔍 Proje Adımları
+## 🔍 Project Workflow
 
-1. **Veri Yükleme**
-2. **Veri Analizi (EDA)**
-3. **Eksik Veri İncelemesi**
+1. **Data Loading**
+2. **Exploratory Data Analysis (EDA)**
+3. **Missing Value Analysis**
 4. **Feature Engineering**
-5. **Model Eğitimi (LightGBM)**
+5. **Model Training (LightGBM)**
 6. **Cross Validation (StratifiedKFold)**
-7. **Tahmin ve Submission Oluşturma**
+7. **Prediction & Submission Generation**
 
 ---
 
-## 🚀 Kurulum
+## 🚀 Installation
 
-Projeyi çalıştırmak için:
+To run this project locally:
 
 ```bash
-git clone https://github.com/kullanici-adin/proje-adi.git
-cd proje-adi
+git clone https://github.com/your-username/project-name.git
+cd project-name
 pip install -r requirements.txt
 ```
 
 ---
 
-## ▶️ Kullanım
+## ▶️ Usage
 
-Notebook çalıştırarak tüm pipeline’ı execute edebilirsin:
+Run the notebook to execute the full pipeline:
 
 ```bash
 jupyter notebook ing-hubs-datathon.ipynb
@@ -76,39 +77,28 @@ jupyter notebook ing-hubs-datathon.ipynb
 
 ## 📈 Model
 
-Model olarak **LightGBM** kullanılmıştır.
+The model used in this project is **LightGBM**.
 
-Avantajları:
+### Advantages:
 
-* Hızlı eğitim ⚡
-* Yüksek performans
-* Büyük veri ile uyumlu
+* Fast training ⚡
+* High performance
+* Scales well with large datasets
 
 ---
 
-## 📤 Çıktı
+## 📤 Output
 
-* Feature engineering sonrası veri:
+* Feature engineered dataset:
 
   * `customers_with_features.csv`
-* Submission dosyası:
 
-  * `submission.csv` (oluşturulabilir)
+* Submission file:
 
----
-
-## 🤝 Katkı
-
-Katkı sağlamak istersen:
-
-1. Fork al 🍴
-2. Branch oluştur
-3. Commit at
-4. PR gönder 🚀
+  * `submission.csv` (can be generated)
 
 ---
 
-## 📌 Not
+## 📌 Notes
 
-Bu proje eğitim ve yarışma amaçlı geliştirilmiştir.
-
+This project was developed for educational and competition purposes.
