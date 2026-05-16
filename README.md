@@ -112,13 +112,3 @@ Katkı sağlamak istersen:
 
 Bu proje eğitim ve yarışma amaçlı geliştirilmiştir.
 
----
-
-İstersen şunları da ekleyebiliriz 👇
-
-* 📊 görseller (EDA grafikler)
-* 📉 model performans metrikleri
-* 🏆 yarışma sonucu
-* 🌐 canlı demo
-
-Bunları da ekleyelim mi?
